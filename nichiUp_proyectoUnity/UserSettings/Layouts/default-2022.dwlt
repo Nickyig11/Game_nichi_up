@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1278
     height: 973
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 40
+  controlID: 41
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 41
+  controlID: 42
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 42
+  controlID: 43
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 240
     height: 557
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -443,23 +443,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4750000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6ae0feff7ce4feff0aeefeff1ceefeff4cf3feff5ef3feff84f3feffbef3feffd0f3feffe4f3feff8af7feffaef7feffdcf7fefff0f7feff02f8feffb6f8feffd8f8feff700bffff920bffff100cffff6c0dffff7e0dffffae0dffff3c0effff9a0effffe40efffff60effff080fffffc416ffffd816ffff4e22ffffe428ffff9629ffff902cffffee2dffffe844ffffec44fffff044fffff844fffffc44ffff0045ffff0845ffff0c45ffff1045ffff1845ffff1c45ffff2045ffff2845ffff2c45ffff3045ffff3445ffff3845ffff3c45ffff4045ffff4845ffff4c45ffff5445ffff5845ffff5c45ffff6445ffff6845ffff6c45ffff7445ffff7845ffff7c45ffff8445ffff8845ffff8c45ffff9445ffff9845ffff9c45ffffa045ffffa445ffffa845ffffac45ffffb045ffffb445ffffb845ffffc045ffffc445ffffc845ffffcc45ffffd445ffffd845ffffdc45ffffe045ffffe445ffff1046ffff8e63ffff8a6dffffae6dffffc475ffffe875ffff2676ffff8876ffffac76ffffc476ffffb47dffffea7dffff347effff4c7effff707effff387fffff5e7fffffc093fffff493ffff1898ffff8699ffffb499fffff699ffff189bffff889bffffd69bfffffa9bffff1e9cffffb6a4ffffcea4ffffc6b8ffff94c4ffff4cdcffff4eedffffc0f0ffff387a0000ee7c0000c6e70100
+      m_SelectedIDs: 0efbffff
+      m_LastClickedID: -1266
+      m_ExpandedIDs: 10fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: HDRP Volume
-        m_OriginalName: HDRP Volume
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 31626
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1008,9 +1008,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -259.3305, y: -134.23488, z: -164.9112}
+    m_Target: {x: 216.57315, y: -187.71217, z: -242.08292}
     speed: 2
-    m_Value: {x: -259.3305, y: -134.23488, z: -164.9112}
+    m_Value: {x: 216.57315, y: -187.71217, z: -242.08292}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1056,13 +1056,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.10731506, y: -0.8285206, z: 0.17010766, w: 0.5226715}
+    m_Target: {x: -0.09008081, y: -0.908811, z: 0.2633107, w: -0.31099746}
     speed: 2
-    m_Value: {x: 0.10731051, y: -0.8284854, z: 0.17010045, w: 0.52264935}
+    m_Value: {x: -0.08921666, y: -0.90962344, z: 0.2620677, w: -0.309752}
   m_Size:
-    m_Target: 212.45953
+    m_Target: 192.09253
     speed: 2
-    m_Value: 212.45953
+    m_Value: 192.09253
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1232,7 +1232,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Unvik_3D/Cross_Plains/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1240,16 +1240,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Unvik_3D/Cross_Plains/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\nigw2301\Documents\nichi_up\nichiUp_proyectoUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 63}
-    m_SelectedIDs: ce750000
-    m_LastClickedID: 30158
-    m_ExpandedIDs: 00000000cc75000034920000389200003c92000048920000509200003eae000052ae0000c2ed0100c6ed0100d2ed010000ca9a3b
+    scrollPos: {x: 0, y: 11}
+    m_SelectedIDs: a6740000
+    m_LastClickedID: 29862
+    m_ExpandedIDs: 000000009472000096720000987200009a7200009c7200009e720000a0720000a2720000687400007a740000a074000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1277,7 +1277,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 000000009472000096720000987200009a7200009c7200009e720000a0720000a2720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
