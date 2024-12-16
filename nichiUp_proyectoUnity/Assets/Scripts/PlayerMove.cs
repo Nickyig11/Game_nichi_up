@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    
-    public float runSpeed = 7;
+    public float runSpeed = 7; 
     public float rotationSpeed = 250;
+    public float mouseSensitivity = 5f; // Sensibilidad para el giro con el ratón
 
     public Animator animator;
-
     public Rigidbody rb;
     public float fuerzaSalto = 8;
     public bool puedoSaltar;
@@ -18,34 +17,55 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
-        transform.Translate(0, 0, y * Time.deltaTime * runSpeed);
+        // Calcular la dirección de movimiento relativa a la rotación actual
+        Vector3 direccionMovimiento = transform.forward * y + transform.right * x;
+        Vector3 movimiento = direccionMovimiento.normalized * runSpeed * Time.deltaTime;
+
+        // Aplicar el movimiento
+        rb.MovePosition(rb.position + movimiento);
     }
+
     void Update()
     {
+        HandleMouseRotation(); // Rotar el jugador con el ratón
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        
         animator.SetFloat("VelX", x);
         animator.SetFloat("VelY", y);
 
-        if(puedoSaltar)
+        if (puedoSaltar)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 animator.SetBool("salte", true);
-                rb.AddForce(new Vector3(0,fuerzaSalto,0),ForceMode.Impulse);
+                rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
             }
-            animator.SetBool("tocoSuelo",true);
-        }else
+            animator.SetBool("tocoSuelo", true);
+        }
+        else
         {
             EstoyCayendo();
+            if (rb.velocity.y < 0)
+            {
+                rb.velocity += Vector3.up * Physics.gravity.y * 2 * Time.deltaTime; 
+            }
         }
     }
-    public void EstoyCayendo(){
-        animator.SetBool("tocoSuelo",false);
-        animator.SetBool("salte", false);
+
+    void HandleMouseRotation()
+    {
+        float mouseInputX = Input.GetAxis("Mouse X");
+        float rotationY = mouseInputX * mouseSensitivity;
+
+        // Aplicar la rotación suavemente
+        transform.Rotate(0, rotationY, 0);
     }
 
+    public void EstoyCayendo()
+    {
+        animator.SetBool("tocoSuelo", false);
+        animator.SetBool("salte", false);
+    }
 }
