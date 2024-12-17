@@ -22,4 +22,8 @@ public class FuncionesBoton : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+        public void escenaWin()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

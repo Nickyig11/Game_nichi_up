@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Necesario para cargar escenas
 
 public class PlayerMove : MonoBehaviour
 {
@@ -68,4 +69,20 @@ public class PlayerMove : MonoBehaviour
         animator.SetBool("tocoSuelo", false);
         animator.SetBool("salte", false);
     }
+
+    // Detectar contacto con el Canvas o cualquier objeto con etiqueta "Canvas"
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Canvas")) // Verifica que el objeto tenga la etiqueta "Canvas"
+        {
+            Debug.Log("Contacto con Canvas. Cargando escena 2...");
+            SceneManager.LoadScene(2); // Cambia a la escena con índice 2
+        }
+        if (other.CompareTag("Canvas2")) // Detecta colisión con el Canvas2
+        {
+            Debug.Log("Contacto con Canvas2. Cargando escena 1...");
+            SceneManager.LoadScene(1); // Cambia a la escena 1
+        }
+    }
+    
 }
