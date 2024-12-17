@@ -1,7 +1,5 @@
 ![Captura_de_pantalla_2024-12-16_040722-removebg-preview](https://github.com/user-attachments/assets/6ef5f4ba-fba2-48b5-80b0-a4fc70c3f094)
 
-# 🧗‍♂️ **NichiUp - Inspirado en *Only Up***  
-
 ¡Bienvenido a **NichiUp**! Un juego de parkour donde el objetivo es simple: **subir** y llegar a la **meta**.  
 
 ---
@@ -25,4 +23,8 @@ Sube, supera obstáculos y alcanza la **meta**. ¡No te caigas!
 
 ---
 
-¡Demuestra tu habilidad y paciencia en **NichiUp**!  
+<img src="https://github.com/user-attachments/assets/9fe4f073-9924-4605-a3f8-c397a7b8155a" width="1920" height="550" /> 
+
+## ¡Demuestra tu habilidad y paciencia en **NichiUp**!  
+
+<img src="https://github.com/user-attachments/assets/24a053a5-48d1-406b-9586-94eccc116448" width="1920" height="500" />
